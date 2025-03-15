@@ -1,6 +1,6 @@
-import { ScrollItems } from "../types/scroll-items";
+import { LogotypesItems } from "../types/hero-logotypes";
 
-export const heroScrollItems: ScrollItems = [
+export const heroLogotypes: LogotypesItems = [
    {
       id: 1,
       src: "/hero/hero-scroll/amazon.svg",

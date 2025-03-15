@@ -5,14 +5,14 @@ import Image from "next/image";
 import { Box } from "@/shared/ui/Box/Box";
 import { List } from "@/shared/ui/List/List";
 
-import { heroScrollItems } from "../data/scroll-items";
+import { heroLogotypes } from "../data/hero-logotypes";
 
-export const HeroScrollItems: FC = () => {
+export const HeroLogotypes: FC = () => {
    return (
       <Box className='mt-25 mb-30 w-full'>
          <List
             tag='ul'
-            renderList={heroScrollItems}
+            renderList={heroLogotypes}
             getItemKey={(item) => item.id}
             renderItem={(item) => (
                <Image
