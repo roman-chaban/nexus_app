@@ -5,6 +5,7 @@ import { Syne } from "next/font/google";
 import { Header } from "@/widgets/Header/ui/Header";
 
 import "./globals.css";
+import { ResizeContainer } from "@/shared/ui/ResizeContainer/ResizeContainer";
 
 const syneSans = Syne({
    variable: "--font-syne",
@@ -26,7 +27,7 @@ export default function RootLayout({
       <html lang='en'>
          <body className={`bg-black ${syneSans.className}`}>
             <Header />
-            {children}
+            <ResizeContainer tag='main'>{children}</ResizeContainer>
          </body>
       </html>
    );

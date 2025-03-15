@@ -3,17 +3,20 @@ import { type FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+import { ResizeContainer } from "@/shared/ui/ResizeContainer/ResizeContainer";
 import { List } from "@/shared/ui/List/List";
 
 import { navigation } from "../data/navigation";
-import { ResizeContainer } from "@/shared/ui/ResizeContainer/ResizeContainer";
 
 export const Header: FC = () => {
    return (
       <header className='w-full'>
-         <ResizeContainer>
+         <ResizeContainer
+            tag='div'
+            className='flex items-center justify-between pt-10 pb-15 max-[75rem]:pb-10'
+         >
             <Image
-               className='object-cover'
+               className='object-cover max-[75rem]:max-w-[7rem]'
                src={"/icons/logo/nexus.svg"}
                alt='Nexus Logo'
                width={164}
@@ -28,7 +31,7 @@ export const Header: FC = () => {
                   renderItem={(item) => (
                      <Link
                         href={item.href}
-                        className='text-2xl font-medium text-white'
+                        className='text-2xl font-medium text-white max-[75rem]:text-lg'
                      >
                         {item.label}
                      </Link>
