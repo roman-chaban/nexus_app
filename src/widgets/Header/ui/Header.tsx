@@ -3,15 +3,15 @@ import { type FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { Container } from "@/shared/ui/Container/Container";
 import { List } from "@/shared/ui/List/List";
 
 import { navigation } from "../data/navigation";
+import { ResizeContainer } from "@/shared/ui/ResizeContainer/ResizeContainer";
 
 export const Header: FC = () => {
    return (
       <header className='w-full'>
-         <Container className='mx-auto flex w-full max-w-[90rem] items-center justify-between px-25 pt-10 pb-15 max-[71.875rem]:px-10'>
+         <ResizeContainer>
             <Image
                className='object-cover'
                src={"/icons/logo/nexus.svg"}
@@ -36,7 +36,7 @@ export const Header: FC = () => {
                   className='flex max-w-fit items-center gap-7'
                />
             </nav>
-         </Container>
+         </ResizeContainer>
       </header>
    );
 };
