@@ -2,9 +2,11 @@
 
 @theme {
     --color-hero-bg: #1a1a1a;
+    --color-linear-bg: linear-gradient(64deg, #0147ff 0%, rgba(1, 71, 255, 0) 100%);
+    --color-speakers-bg: #0147ff;
+    --color-speakers-gray: #dedee0;
     --text-medium-text: 1.375rem;
     --leading-medium: 136%;
-    --color-linear-bg: linear-gradient(64deg, #0147ff 0%, rgba(1, 71, 255, 0) 100%);
 }
 
 body {
